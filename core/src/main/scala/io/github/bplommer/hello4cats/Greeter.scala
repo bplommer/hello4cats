@@ -9,6 +9,6 @@ trait Greeter[F[_]] {
 
 object Greeter {
   def make[F[_]: Sync]: Greeter[F] = new Greeter[F] {
-    def sayHello: F[Unit] = Console.make[F].println("hello world!")
+    def sayHello: F[Unit] = Console.make[F].println("hello everyone!")
   }
 }
